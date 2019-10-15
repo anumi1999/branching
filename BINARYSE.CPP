@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-int bs( int a[] , int n , int m)
+int bs( int a[] , int n , int m)        // for bineary search 
   {
      int beg, last , mid ;
      beg =0;
@@ -18,7 +18,7 @@ int bs( int a[] , int n , int m)
 
 	 return -1;
   }
-int linearse( int a[] , int n , int m )
+int linearse( int a[] , int n , int m )       // for linear search
   {
       int i = 0 ;
       for ( i = 0 ; i < n ; i ++ )
@@ -48,7 +48,7 @@ void main ()
      printf(" enter the element to be found " ) ;
      scanf("%d" , &m );
      printf("Finding by linear search : " ) ;
-     h  = linearse ( a,n,m) ;
+     h  = linearse ( a,n,m);                        //  linear search function called
      h = bs (a,n,m);
      if (h== -1)
        printf( " not found" ) ;
